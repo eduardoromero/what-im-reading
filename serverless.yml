@@ -1,0 +1,30 @@
+service:
+  name: what-im-reading-backend
+
+plugins:
+  - serverless-offline
+  - serverless-domain-manager
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  memorySize: 512
+
+functions:
+  prismic:
+    handler: prismic.webhook
+    events:
+      - http:
+          method: GET
+          path: prismic
+      - http:
+          method: POST
+          path: prismic
+
+
+custom:
+  customDomain:
+    domainName: lambda.fox.engineer
+    basePath: 'reading'
+    stage: ${self:provider.stage}
+    createRoute53Record: true

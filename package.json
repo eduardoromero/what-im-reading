@@ -1,0 +1,19 @@
+{
+  "name": "what-im-reading-backend",
+  "version": "1.0.0",
+  "description": "Serverless Backend for What I'm Reading",
+  "main": "handler.js",
+  "author": "Eduardo Romero",
+  "license": "MIT",
+  "devDependencies": {
+    "serverless-domain-manager": "^2.3.6",
+    "serverless-offline": "^3.20.1",
+    "standard": "^11.0.1"
+  },
+  "scripts": {
+    "deploy": "sls deploy --aws-s3-accelerate"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.222.1"
+  }
+}
