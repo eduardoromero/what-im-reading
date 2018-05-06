@@ -6,6 +6,7 @@
   "author": "Eduardo Romero",
   "license": "MIT",
   "devDependencies": {
+    "prettier": "^1.12.1",
     "serverless-domain-manager": "^2.3.6",
     "serverless-offline": "^3.20.1",
     "standard": "^11.0.1"
@@ -14,6 +15,11 @@
     "deploy": "sls deploy --aws-s3-accelerate"
   },
   "dependencies": {
-    "aws-sdk": "^2.222.1"
+    "aws-sdk": "^2.222.1",
+    "jsonata": "^1.5.3",
+    "kentico-cloud-delivery-node-sdk": "^1.2.0",
+    "lodash": "^4.17.10",
+    "prismic-javascript": "^1.5.0-beta.3",
+    "z": "^1.0.6"
   }
 }

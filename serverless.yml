@@ -20,6 +20,16 @@ functions:
       - http:
           method: POST
           path: prismic
+  kentico:
+    handler: kentico.webhook
+    timeout: 5
+    events:
+      - http:
+          method: GET
+          path: kentico
+      - http:
+          method: POST
+          path: kentico
 
 
 custom:
